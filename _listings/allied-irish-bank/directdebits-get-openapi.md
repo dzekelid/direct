@@ -1,16 +1,16 @@
+---
 swagger: "2.0"
 x-collection-name: Allied Irish Bank
-x-complete: 1
+x-complete: 0
 info:
-  title: Allied Irish Bank
-  description: this-is-an-openapi-definition-for-the-standard-set-of-open-banking-httpopenbankingapis-io-apis-covering-the-allied-irish-bank-apis-
-  termsOfService: https://www.openbanking.org.uk/open-licence/
+  title: Allied Irish Bank Account APIs Get Direct Debits
+  description: Get Direct Debits
+  termsOfService: https://www.openbanking.org.uk/terms
   contact:
-    name: API Evangelist
-    url: https://apievangelist.com
-    email: info@apievangelist.com
+    name: Service Desk
+    email: ServiceDesk@openbanking.org.uk
   version: 1.0.0
-basePath: open-banking/v2.1/
+basePath: /open-banking/v1.1
 schemes:
 - http
 produces:
@@ -82,4 +82,17 @@ paths:
       - Banking
       - Direct
       - Debits
-host: openapi.aibgb.co.uk
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

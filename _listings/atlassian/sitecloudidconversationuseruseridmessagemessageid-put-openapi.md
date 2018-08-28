@@ -60,6 +60,29 @@ paths:
       - In
       - Direct
       - Conversation
+    delete:
+      summary: Delete a message in a direct conversation
+      description: Authentication required, with scope participate:conversation
+      operationId: UserMessageDeleteHandler
+      x-api-path-slug: sitecloudidconversationuseruseridmessagemessageid-delete
+      parameters:
+      - in: path
+        name: cloudId
+        description: The id of the site (cloudId)
+      - in: path
+        name: messageId
+        description: The ID of the message
+      - in: path
+        name: userId
+        description: The user Id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Message
+      - In
+      - Direct
+      - Conversation
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

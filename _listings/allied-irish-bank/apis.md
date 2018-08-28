@@ -11,11 +11,33 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: Direct
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/allied-irish-bank/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Account and Transaction API Specification - Get Account Direct Debits
+  x-api-slug: accountsaccountiddirectdebits-get
+  description: Get Direct Debits related to an account
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/allied-irish-bank.jpeg
+  humanURL: https://aibgb.co.uk/
+  baseURL: https:////open-banking/v1.1
+  tags: UK Banks, Accounts, Loans, ATMs, API Provider, Profiles, Relative Data, General
+    Data, Banking
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/allied-irish-bank/accountsaccountiddirectdebits-get-openapi.md
+- name: Account and Transaction API Specification - Get Direct Debits
+  x-api-slug: directdebits-get
+  description: Get Direct Debits
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/allied-irish-bank.jpeg
+  humanURL: https://aibgb.co.uk/
+  baseURL: https:////open-banking/v1.1
+  tags: UK Banks, Accounts, Loans, ATMs, API Provider, Profiles, Relative Data, General
+    Data, Banking
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/allied-irish-bank/directdebits-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://allied.irish.bank.api.gallery.streamdata.io

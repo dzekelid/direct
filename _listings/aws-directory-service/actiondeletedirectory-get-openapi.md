@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: AWS Directory Service
-x-complete: 1
+x-complete: 0
 info:
-  title: AWS Directory Service API
+  title: AWS Directory Service API Delete Directory
   version: 1.0.0
+  description: Deletes an AWS Directory Service directory.
 schemes:
 - http
 produces:
@@ -140,87 +142,17 @@ paths:
           description: OK
       tags:
       - Directories
-  /?Action=DescribeDirectories:
-    get:
-      summary: Describe Directories
-      description: Obtains information about the directories that belong to this account.
-      operationId: describeDirectories
-      x-api-path-slug: actiondescribedirectories-get
-      parameters:
-      - in: query
-        name: DirectoryIds
-        description: A list of identifiers of the directories for which to obtain
-          the information
-        type: string
-      - in: query
-        name: Limit
-        description: The maximum number of items to return
-        type: string
-      - in: query
-        name: NextToken
-        description: The DescribeDirectoriesResult
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Directories
-  /?Action=GetDirectoryLimits:
-    get:
-      summary: Get Directory Limits
-      description: Obtains directory limit information for the current region.
-      operationId: getDirectoryLimits
-      x-api-path-slug: actiongetdirectorylimits-get
-      parameters:
-      - in: query
-        name: DirectoryLimits
-        description: A DirectoryLimits object that contains the directory limits for
-          the current         region
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Directories
-  /?Action=ListSchemaExtensions:
-    get:
-      summary: List Schema Extensions
-      description: Lists all schema extensions applied to a Microsoft AD Directory.
-      operationId: listSchemaExtensions
-      x-api-path-slug: actionlistschemaextensions-get
-      parameters:
-      - in: query
-        name: DirectoryId
-        description: The identifier of the directory from which to retrieve the schema
-          extension information
-        type: string
-      - in: query
-        name: Limit
-        description: The maximum number of items to return
-        type: string
-      - in: query
-        name: NextToken
-        description: The ListSchemaExtensions
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Schema Extension
-  /?Action=VerifyTrust:
-    get:
-      summary: Verify Trust
-      description: AWS Directory Service for Microsoft Active Directory allows you
-        to configure and verify trust relationships.
-      operationId: verifyTrust
-      x-api-path-slug: actionverifytrust-get
-      parameters:
-      - in: query
-        name: TrustId
-        description: The unique Trust ID of the trust relationship to verify
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Trust
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

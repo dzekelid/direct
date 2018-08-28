@@ -18,11 +18,23 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "10"
 x-alexaRank: "0"
 tags: Direct
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/aws-direct-connect/apis.md
 specificationVersion: "0.14"
 apis:
+- name: AWS Direct Connect API - Create Connection
+  x-api-slug: actioncreateconnection-get
+  description: Creates a new connection between the customer network and a specific
+    AWS Direct Connect location.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AWSDirectConnect.png
+  humanURL: https://aws.amazon.com/directconnect/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/aws-direct-connect/actioncreateconnection-get-openapi.md
 - name: AWS Direct Connect API - Create Interconnect
   x-api-slug: actioncreateinterconnect-get
   description: Creates a new interconnect between a AWS Direct Connect partner's network
@@ -51,6 +63,39 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/aws-direct-connect/actiondescribelocations-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/aws-direct-connect/actiondescribelocations-get-openapi.md
+- name: AWS Direct Connect API - Describe Tags
+  x-api-slug: actiondescribetags-get
+  description: Describes the tags associated with the specified Direct Connect resources.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AWSDirectConnect.png
+  humanURL: https://aws.amazon.com/directconnect/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/aws-direct-connect/actiondescribetags-get-openapi.md
+- name: AWS Direct Connect API - Tag Resource
+  x-api-slug: actiontagresource-get
+  description: Adds the specified tags to the specified Direct Connect resource.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AWSDirectConnect.png
+  humanURL: https://aws.amazon.com/directconnect/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/aws-direct-connect/actiontagresource-get-openapi.md
+- name: AWS Direct Connect API - Untag Resource
+  x-api-slug: actionuntagresource-get
+  description: Removes one or more tags from the specified Direct Connect resource.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Networking_AWSDirectConnect.png
+  humanURL: https://aws.amazon.com/directconnect/
+  baseURL: :///
+  tags: Amazon Web Services, Stack Network, API Service Provider, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/direct/master/_listings/aws-direct-connect/actionuntagresource-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://aws.device.farm.api.gallery.streamdata.io

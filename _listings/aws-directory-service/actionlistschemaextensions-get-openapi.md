@@ -1,9 +1,11 @@
+---
 swagger: "2.0"
 x-collection-name: AWS Directory Service
-x-complete: 1
+x-complete: 0
 info:
-  title: AWS Directory Service API
+  title: AWS Directory Service API List Schema Extensions
   version: 1.0.0
+  description: Lists all schema extensions applied to a Microsoft AD Directory.
 schemes:
 - http
 produces:
@@ -207,20 +209,17 @@ paths:
           description: OK
       tags:
       - Schema Extension
-  /?Action=VerifyTrust:
-    get:
-      summary: Verify Trust
-      description: AWS Directory Service for Microsoft Active Directory allows you
-        to configure and verify trust relationships.
-      operationId: verifyTrust
-      x-api-path-slug: actionverifytrust-get
-      parameters:
-      - in: query
-        name: TrustId
-        description: The unique Trust ID of the trust relationship to verify
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Trust
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
